@@ -66,6 +66,8 @@ go mod tidy
 
 ## Running the Server
 
+hoose **one** of the following methods:
+
 ### Using Make
 ```bash
 make run
