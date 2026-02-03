@@ -6,9 +6,9 @@ import (
 	"log"
 	"strings"
 
-	"github.com/saurabhj/golang-country-search/internal/cache"
-	"github.com/saurabhj/golang-country-search/internal/client"
-	"github.com/saurabhj/golang-country-search/internal/model"
+	"github.com/sj1815/golang-country-search/internal/cache"
+	"github.com/sj1815/golang-country-search/internal/client"
+	"github.com/sj1815/golang-country-search/internal/model"
 )
 
 type CountryService interface {
@@ -40,11 +40,13 @@ func (s *countryService) SearchCountry(ctx context.Context, name string) (*model
 	// Check cache first
 	if cached, found := s.cache.Get(cacheKey); found {
 		if country, ok := cached.(*model.Country); ok {
+			// Log cache hit
 			log.Printf("CACHE HIT: Found country in cache: %s", cacheKey)
 			return country, nil
 		}
 	}
 
+	// Log cache miss
 	log.Printf("CACHE MISS: Country not in cache, calling API: %s", cacheKey)
 
 	response, err := s.client.SearchCountryByName(ctx, name)
@@ -60,6 +62,7 @@ func (s *countryService) SearchCountry(ctx context.Context, name string) (*model
 
 	// Store in cache for future requests
 	s.cache.Set(cacheKey, country)
+	// Log cache set operation
 	log.Printf("CACHE SET: Stored country in cache: %s", cacheKey)
 
 	return country, nil

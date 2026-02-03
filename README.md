@@ -53,7 +53,7 @@ golang-country-search/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/saurabhj/golang-country-search.git
+git clone https://github.com/sj1815/golang-country-search.git
 cd golang-country-search
 ```
 

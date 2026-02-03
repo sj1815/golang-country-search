@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/saurabhj/golang-country-search/internal/handler"
-	"github.com/saurabhj/golang-country-search/internal/model"
+	"github.com/sj1815/golang-country-search/internal/handler"
+	"github.com/sj1815/golang-country-search/internal/model"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

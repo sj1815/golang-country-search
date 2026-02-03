@@ -8,8 +8,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/saurabhj/golang-country-search/internal/config"
-	"github.com/saurabhj/golang-country-search/internal/router"
+	"github.com/sj1815/golang-country-search/internal/config"
+	"github.com/sj1815/golang-country-search/internal/router"
 )
 
 // main is the entry point of the application.

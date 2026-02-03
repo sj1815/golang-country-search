@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/saurabhj/golang-country-search/internal/model"
+	"github.com/sj1815/golang-country-search/internal/model"
 )
 
 const (

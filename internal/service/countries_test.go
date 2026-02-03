@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/saurabhj/golang-country-search/internal/model"
+	"github.com/sj1815/golang-country-search/internal/model"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

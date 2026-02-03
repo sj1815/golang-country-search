@@ -3,10 +3,10 @@ package config
 import (
 	"time"
 
-	"github.com/saurabhj/golang-country-search/internal/cache"
-	"github.com/saurabhj/golang-country-search/internal/client"
-	"github.com/saurabhj/golang-country-search/internal/handler"
-	"github.com/saurabhj/golang-country-search/internal/service"
+	"github.com/sj1815/golang-country-search/internal/cache"
+	"github.com/sj1815/golang-country-search/internal/client"
+	"github.com/sj1815/golang-country-search/internal/handler"
+	"github.com/sj1815/golang-country-search/internal/service"
 )
 
 type Config struct {

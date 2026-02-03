@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/saurabhj/golang-country-search/internal/model"
-	"github.com/saurabhj/golang-country-search/internal/service"
+	"github.com/sj1815/golang-country-search/internal/model"
+	"github.com/sj1815/golang-country-search/internal/service"
 )
 
 // CountryHandler handles HTTP requests related to countries.

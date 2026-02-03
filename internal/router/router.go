@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/saurabhj/golang-country-search/internal/handler"
+	"github.com/sj1815/golang-country-search/internal/handler"
 )
 
 // NewRouter sets up the HTTP routes for the application.
